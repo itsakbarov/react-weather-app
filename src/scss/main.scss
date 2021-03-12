@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:
+        radial-gradient(circle, rgba(0, 0, 0, 0.418) 0%, rgba(0, 0, 0, 0.486) 100%),
+        url('https://images.unsplash.com/photo-1583591749989-0d1e8c5bbf42?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 25px 0;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+                @media screen and (max-width: 500px) {
+                    margin-bottom: 12px;
+                }
+
+        span {
+            color: rgb(185, 185, 187);
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+            ;
+        }
+
+        img {
+            width: 50px;
+            margin-right: 15px;
+        }
+
+    }
+
+    .container {
+        display: flex;
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+        }
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .input {
+        width: 300px;
+        @media screen and (max-width: 500px){
+            transform: translate(-15px, 10px);
+        }
+    }
+
+    .ant-input {
+
+        background: #d1c8c829 !important;
+        border: none !important;
+
+    }
+}
+
+.ant-input-wrapper {
+    display: flex !important;
+}
+
+.ant-input-group-addon {
+    background: transparent !important;
+
+    .ant-input-search-button {
+        background: #d1c8c829 !important;
+        border: none !important;
+    }
+}
+
+.glass {
+    background-color: rgba(255, 255, 255, .1);
+    padding: 2rem;
+    border-radius: 7px;
+    margin-top: 3rem;
+    backdrop-filter: blur(5px);
+
+    h2 {
+        text-align: center;
+        color: white
+    }
+}
+
+.location-name {
+    font-size: 2.75rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.current-date {
+    display: block;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.feels {
+    font-size: 4rem;
+    color: #00ff14;
+    margin: 0;
+    font-weight: 800;
+}
+
+.actual_weather {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.avarage {}
+
+.banner .container{
+    max-width: 500px;
+    width: 100%;
+}
+
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
