@@ -10,7 +10,7 @@ const Hero = ({ info }) => {
             <div className="container">
                 {info.isFetched ? (
                     <div className="glass">
-                        <h2 className="location-name">{info.data.name}</h2>
+                        <h2 style={{display: 'flex',justifyContent: 'center', alignItems: 'baseline'}} className="location-name">{info.data.name} <p style={{fontSize: '26px'}}>, {info.data.sys.country}</p></h2>
                         <span className="current-date">{date}</span>
                         <h2 className="feels">{parseFloat(info.data.main.feels_like - 271).toFixed(1)}&deg;c</h2>
                         <h2 className="avarage">
@@ -22,7 +22,7 @@ const Hero = ({ info }) => {
                         
                         </h2>
                         <h2>
-                            <span>humidity:    {info.data.main.humidity}⁰ </span>
+                            <span>humidity:    {info.data.main.humidity}% </span>
                         </h2>
                         <h2>Wind: {info.data.wind.deg}⁰  {info.data.wind.speed} m/s</h2>
                     </div>
